@@ -52,7 +52,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
     payment = bodyCredit * (percent + (percent / (((1 + percent) ** amountCreditMonths) - 1)));
 
-    totalAmount = (payment * amountCreditMonths).toFixed(2);
+    totalAmount = +(payment * amountCreditMonths).toFixed(2);
   };
   
   console.log(totalAmount);
