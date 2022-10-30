@@ -28,18 +28,15 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
   let bodyCredit;
   let amountCreditMonths;
   let payment;
-  
-
-  const collectionInputs = document.querySelectorAll('.card > input[type="text"]');
 
   if ( Number.isNaN(+percent) ) {
-    totalAmount = `параметр ${(collectionInputs[0].placeholder).toLowerCase()} содержит неправильное значение ${percent}`;
+    totalAmount = `Параметр "Процентная ставка" содержит неправильное значение "${percent}"`;
   }
   else if ( Number.isNaN(+contribution) ) {
-    totalAmount = `параметр ${(collectionInputs[1].placeholder).toLowerCase()} содержит неправильное значение ${contribution}`;
+    totalAmount = `Параметр "Начальный взнос" содержит неправильное значение "${contribution}"`;
   }
   else if ( Number.isNaN(+amount) ) {
-    totalAmount = `параметр ${(collectionInputs[2].placeholder).toLowerCase()} содержит неправильное значение ${amount}`;
+    totalAmount = `Параметр "Общая стоимость" содержит неправильное значение "${amount}"`;
   }
   else {
     percent = +percent / 12 / 100;

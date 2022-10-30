@@ -33,7 +33,7 @@ describe('Домашнее задание к занятию 1. «Основны�
     });
     it('верно считать кредит: кейс #1', () => {
       const nextYearDate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-      expect(calculateTotalMortgage(10, 0, 50000, nextYearDate)).toEqual(52749.53);
+      expect(calculateTotalMortgage(10, 0, 50000, nextYearDate)).toEqual(52749.53); 
     });
 
     it('верно считать кредит: кейс #2', () => {
